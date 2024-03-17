@@ -1,13 +1,10 @@
-// BIBLIOTECAS/MODULOS UTILIZADOS
-const Sequelize = require("sequelize");
 
-//CRIANDO A CONFIGURAÇÃO DO BANCO DE DADOS
+const Sequelize = require("sequelize");
 const sequelize = new Sequelize({
   dialect: "sqlite",
-  storage: "./videoteca.sqlite",
+  storage: "./filmeteca.sqlite",
 });
 
-//TRATANDO POSSÍVEIS ERROS E AUTENTICANDO NO BANCO
 try {
   sequelize.authenticate();
   console.log("Banco de dados conectado com sucesso!");
