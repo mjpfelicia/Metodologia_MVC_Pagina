@@ -2,7 +2,7 @@ const Filme = require("../models/Filme");
 
 module.exports = class FilmeController {
     static cadastrarFilme(req, res) {
-        res.render("filmes/Cadastrar");
+        res.render("filmes/cadastrar");
     }
 
 
